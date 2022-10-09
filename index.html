@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SPA07</title>
+	<style type="text/css">
+		*{
+			font-family: sans-serif;
+		}
+		header{
+		text-align: left;
+		color: #A52A2A;
+		}
+		 
+		header .judul{
+			font-size: 30pt;
+			font-family: Times New Roman;
+		}
+
+		body{
+			background: url('foto/wp.jpg');
+			background-size: cover;
+		}
+		.profil{
+			border-radius: 40%;
+			padding: 5px;
+			background: #A52A2A;
+			margin: 7px;
+			width: 6cm; height: 7cm; object-fit: cover;
+		}
+
+		.navigasi{
+			background-color: #A52A2A;
+			padding: 10px;
+		}
+
+		h2{
+			color: #A52A2A;
+			text-align: center;
+		}
+
+		.menu{
+			padding: 10px;
+			color: #F5F5DC;
+		}
+		.menu:hover{
+			cursor: pointer;
+			background-color: #F5F5DC;
+			color: #A52A2A
+		}
+
+		.aktif{
+			background-color: #F5F5DC;
+			color: #A52A2A;
+		}
+
+		.home{
+			background-color: #F5F5DC;
+			padding: 10px;
+			text-align: center;
+		}
+		.home p{
+			color: #A52A2A;
+		}
+		.home p:hover{
+			color: #F5F5DC;
+			background-color: #A52A2A;
+		}
+
+
+		.isi{
+			display: none;
+			background-color: #F5F5DC;
+			padding: 10px;
+		}
+		.isi a{
+			color: #A52A2A;
+		}
+
+
+		table{
+		   	font-family: sans-serif;
+		    color:#A52A2A;
+		    border-collapse: collapse;
+		    width: 50%;
+		    border: 2px solid #A52A2A;
+		    margin: 0 auto;
+		}
+
+		table th, table td {
+		    padding: 8px 20px;
+		}
+		table tr:hover{
+			color: #F5F5DC;
+			background-color: #A52A2A;
+		}
+		.link:hover{
+			color: #F5F5DC;
+		}
+
+		#footer{
+			background-color: #A52A2A;
+			color: #F5F5DC;
+			text-align: center;
+
+		}
+
+
+		#isi_4 input, #isi_4 textarea{
+			display: block;
+			width: 100%;
+			height: 30px;
+			margin-bottom: 12px;
+			border: 2px solid #A52A2A
+		}
+
+		#isi_4 textarea{
+			height: 130px;
+		}
+
+		input[type="submit"]{
+			background-color: #F5F5DC;
+			color: #A52A2A;
+		}
+
+
+		@media only screen and (min-width: 768px){
+		  .SPA{
+		    width: 90%;
+		    height: 100%;
+		  }
+		   
+		}
+		@media only screen and (min-width: 478px) and (max-width:600px){
+		  .SPA{
+		    width: 90%;
+		    height: 100%;
+		  }
+		  h2{
+		  	font-size: 17px;
+		  }
+		  header .judul{
+		  	font-size: 27px;
+		  }
+		  .navigasi{
+		  	font-size: 13px;
+		  	text-align: center;
+		  }
+		  p{
+		  	font-size: 13px;
+		  }
+		  .profil{
+		  	border-radius: 40%;
+			padding: 1px;
+			background: #A52A2A;
+			margin: 7px;
+			width: 4cm; height: 5cm; object-fit: cover;
+		  }
+		  #isi_3{
+		  	font-size: 12px;
+		  }
+		}
+
+		
+
+
+
+		@media only screen and (min-width: 992px){
+		  .SPA{
+		    width: 90%;
+		    height: 100%;
+		  }
+		}
+		@media only screen and (min-width: 1200px){
+		  .SPA{
+		    width: 90%;
+		    height: 100%;
+		  }
+		}
+
+
+	</style>
+</head>
+
+<header>
+	<h1 class="judul">HatmaraSukma's Page</h1>
+</header>
+<body class="SPA">
+
+	<div class="navigasi">
+		<span class="menu aktif" id="menu_1">Home</span>
+		<span class="menu" id="menu_2">About</span>
+		<span class="menu" id="menu_3">Challenge</span>
+		<span class="menu" id="menu_4">Contact</span>
+	</div>
+	<div class="home" id="isi_1">
+		<h2>Welcome to my page!!</h2>
+		<img class="profil" src="foto/mara3.jpeg" id="profil" alt="">
+		<p> Siti Hatmara Sukma<br>
+			NIM 41226097<br>
+			STMIK IKMI Cirebon</p>
+	</div>
+	<div class="isi" id="isi_2">
+		<h2>About Me</h2>
+		<p>Soon, disini kamu bisa mengenalku lebih banyak:)</p>
+	</div>
+	<div class="isi" id="isi_3">
+		<h2>Kumpulan Challenge Qwars</h2>
+		<table border="1" cellpadding="10">
+		<tr>
+			<td><a class="link" href="goodpeople.html">1. P03 HTML Table Sederhana<a/></td>
+		</tr>
+		<tr>
+			<td><a class="link" href="top5.html">2. P03 HTML Table CSS<a/></td>
+		</tr>
+		<tr>
+			<td><a class="link" href="formulirPMB.html">3. P03 Formulir Level #1 Basic HTML Form<a/></td>
+		</tr>
+		<tr>
+			<td><a class="link" href="formulirPMBlv2.html">4. P04 Formulir Level #2 Basic-CSS HTML Form<a/></td>
+		</tr>
+		<tr>
+			<td><a class="link" href="simpleSPA.html">5. P06 JQuery Add/Remove Class for SPA Menu<a/></td>
+		</tr>
+		<tr>
+			<td><a class="link" href="fadeout.html">6. P05 JQuery FadeOut When Delete<a/></td>
+		</tr>
+		</table>
+
+	</div>
+	<div class="isi" id="isi_4">
+		<h2>Let's contact me</h2>
+		<p align="center">Kita bisa bicara lebih banyak disini:)</p>
+		<p>Instagram : <a href="https://www.instagram.com/htmara_">@htmara_</a></p>
+		<p>Facebook : <a href="https://www.facebook.com/Hatmarasukma20">Hatmarasukma</a></p>
+		<p>WhatsApp : <a href="https://wa.me/+6281310182544">Hatmarasukma</a></p>
+		<p>Email : <a>sitihatmarasukma@gmail.com</a></p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $(".menu").click(function(){
+		        let menu_id = $(this).prop('id');
+		        let split = menu_id.split('_');
+		        let id = split[1];
+
+		        $(".menu").removeClass('aktif');
+		        $("#menu_"+id).addClass('aktif');
+
+		        $(".home").slideUp();
+		        $("#isi_1").slideUp();
+		        $("#isi_2").slideUp();
+		        $("#isi_3").slideUp();
+		        $("#isi_4").slideUp();
+		        $("#isi_"+id).slideToggle();
+		    });
+		});
+	</script>
+</body>
+</div>
+	<div id="footer">
+				<p>&copy; Siti Hatmara Sukma 2022</p>
+			</div>
+</html>
